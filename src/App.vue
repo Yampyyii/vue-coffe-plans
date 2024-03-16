@@ -18,9 +18,9 @@ import planItem from './components/plan-item.vue';
     </h2>
 
     <div class="plans">
-      <planItem></planItem>
-      <planItem></planItem>
-      <planItem></planItem>
+      <planItem name="El soltero"></planItem>
+      <planItem name="El curioso"></planItem>
+      <planItem name="El adicto"></planItem>
     </div>
   </div>
 </template>
