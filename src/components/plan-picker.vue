@@ -1,6 +1,11 @@
 <template>
   <div class="plans">
-    <plan-picker-item v-for="plan in plans" :key="plan" :name="plan" />
+    <plan-picker-item 
+      v-for="plan in plans" 
+      :key="plan" 
+      :name="plan"
+      @select="(name)=>console.log('Plan selected:', name)"
+    />
   </div>
 </template>
 
