@@ -4,8 +4,9 @@
       v-for="plan in plans" 
       :key="plan" 
       :name="plan"
-      @select="(name)=>console.log('Plan selected:', name)"
+      @select="selectPlan"
     />
+    <p>{{  selectedPlan }}</p>
   </div>
 </template>
 
@@ -13,4 +14,8 @@
   import planPickerItem from './plan-picker-item.vue';
   import {ref} from 'vue';
   const plans = ref(['El soltero', 'El curioso', 'El adicto']);
+  const selectedPlan = ref(null)
+  const selectPlan = (name) => {
+    selectedPlan.value = name;
+  }
 </script>
