@@ -1,14 +1,17 @@
 <script setup>
-import { ref } from 'vue';
+import { computed } from 'vue';
+
 const props = defineProps({
-  name: String
+  name: String,
+  selectedPlan: String
 });
+
+const isSelected = computed(() => props.selectedPlan === props.name);
+
 // Define events
 const emit = defineEmits(['select']);
-//
-const selected = ref(false);
+
 const select = () => {
-  selected.value = true;
   emit('select', props.name)
 };
 </script>
@@ -16,10 +19,10 @@ const select = () => {
 <template>
   <div 
     @click="select" 
-    class="plan" :class="{'selected-plan': selected}">
+    class="plan" :class="{'selected-plan': isSelected}">
     <div class="description">
       <span class="title">
-        {{name}} {{ selected ? '👍' : '' }}
+        {{name}}
       </span>
     </div>
   </div>

@@ -5,8 +5,8 @@
       :key="plan" 
       :name="plan"
       @select="selectPlan"
+      :selected-plan="selectedPlan"
     />
-    <p>{{  selectedPlan }}</p>
   </div>
 </template>
 
