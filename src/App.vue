@@ -6,7 +6,7 @@ import fancyButton from './components/FancyButton.vue';
   <div class="content">
     <fancy-button>
       <template #icon="{ hover }">
-        ⭐ {{ hover }}
+        {{ hover ? "🌟" : "⭐"}}
       </template>
       Hazme Clic
     </fancy-button>
