@@ -2,7 +2,7 @@
   <div class="plan">
     <div class="description">
       <span class="title">
-        {{ name }} 👍 Likes: {{ likes }}
+        {{ name }}
       </span>
     </div>
   </div>
@@ -13,10 +13,6 @@ defineProps({
   name: {
     type: String,
     required: true,
-  },
-  likes: {
-    type: Number,
-    default: 0,
   }
 });
 </script>
