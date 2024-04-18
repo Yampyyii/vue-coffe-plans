@@ -11,11 +11,15 @@ import planPicker from './components/plan-picker.vue';
   </header>
 
   <div class="content">
+    <!-- <app-title title="Coffee Plans"/> -->
     <h1 class="title">Coffee Plans</h1>
+    <!-- <app-subtitle message="Viajamos por el mundo para encontrar el mejor café de origen único para ti" -->
     <h2 class="subtitle">
       Viajamos por el mundo para encontrar el mejor café de origen único para ti
     </h2>
 
+    <!-- my-plans es un arreglo reactivo de planes -->
+    <!-- <plan-picker :plans="my-plans"/>  -->
     <plan-picker />
 
     
