@@ -1,12 +1,5 @@
 <script setup>
-import { ref } from 'vue';
-import planItem from './components/plan-item.vue';
-const plans = ref([
-  "El soltero",
-  "El adicto",
-  "El viajero",
-  "El Colombiano",
-  "El Italiano",]);
+import planPicker from './components/plan-picker.vue';
 </script>
 
 <template>
@@ -19,17 +12,13 @@ const plans = ref([
 
   <div class="content">
     <h1 class="title">Coffee Plans</h1>
-
     <h2 class="subtitle">
       Viajamos por el mundo para encontrar el mejor café de origen único para ti
     </h2>
 
-    <div class="plans">
-      <plan-item 
-        v-for="plan in plans" 
-        :name="plan" 
-        v-bind:key="plan"/>
-    </div>
+    <plan-picker />
+
+    
   </div>
 </template>
 
