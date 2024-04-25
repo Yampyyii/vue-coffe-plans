@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import planPicker from './components/plan-picker.vue';
+</script>
 
 <template>
   <header>
@@ -8,61 +10,40 @@
     </div>
   </header>
 
-  <div class="content">
-    <h1 class="title">Coffee Plans</h1>
+<div class="content">
+  <h1 class="title"> Coffe Plans</h1>
+  <h2 class="subtitle">
+    Viajamos por el mundo para encontrar el mejor cafe
+  </h2>
 
-    <h2 class="subtitle">
-      Viajamos por el mundo para encontrar el mejor café de origen único para ti
-    </h2>
+  <plan-picker />
 
-    <div class="plans">
-      <div class="plan">
-        <div class="description">
-          <span class="title">
-            El Soltero
-          </span>
-        </div>
-      </div>
-      <div class="plan">
-        <div class="description">
-          <span class="title">
-            El Curioso
-          </span>
-        </div>
-      </div>
-      <div class="plan">
-        <div class="description">
-          <span class="title">
-            El adicto
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
+
+</div>
 </template>
 
 <style scoped>
-header {
+header{
   line-height: 1.5;
 }
 
-.logo {
+.logo{
   display: block;
   margin: 0 auto 2rem;
 }
 
-@media (min-width: 1024px) {
-  header {
+@media (min-width: 1024px){
+  header{
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    padding-right: calc(var(--section-gap)/2);
   }
 
-  .logo {
+  .logo{
     margin: 0 2rem 0 0;
   }
 
-  header .wrapper {
+  header .wrapper{
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
