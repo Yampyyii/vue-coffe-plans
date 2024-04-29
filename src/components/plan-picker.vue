@@ -5,7 +5,7 @@
   </template>
   
   <script setup>
-    import planItem from './plan-item.vue';
+    import planItem from './plan-picker-item.vue';
     import {ref} from 'vue';
     const plans = ref(['El soltero', 'El curioso', 'El adicto']);
   </script>

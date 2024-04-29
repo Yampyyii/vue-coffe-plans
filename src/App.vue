@@ -1,6 +1,6 @@
 <script setup>
   import planPicker from './components/plan-picker.vue';
-  
+  import planItem from './components/plan-picker-item.vue';
 </script>
 
 <template>
@@ -19,7 +19,7 @@
     </h2>
 
     <plan-picker />
-    
+    <planItem name="El codero"></planItem>
   </div>
 </template>
 
