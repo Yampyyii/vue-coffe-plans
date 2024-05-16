@@ -1,9 +1,17 @@
 <script setup>
-import Fancybutton from './components/FancyButton.vue'
+import fancyButton from './components/FancyButton.vue';
 </script>
 
 <template>
-<Fancybutton/>
-
-</template>
-
+    <div class="content">
+      <fancy-button>
+        <template #icon="{ hover }">
+          {{ hover ? "🌟" : "⭐"}}
+        </template>
+        Hazme Clic
+      </fancy-button>
+    </div>
+  </template>
+  
+<style scoped>
+</style>
