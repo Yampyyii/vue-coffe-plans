@@ -8,17 +8,19 @@
     :name="plan"
     v-bind:key="plan" />
 
-    <p style="font-size: 30px;">Counter:{{ counter }}</p>
+  <!-- <p style="font-size: 30px;">Counter:{{ counter }}</p>-->
   </div>
 </template>
 
 <script setup>
+//lo que tenia yo
+
 import { ref, onMounted, onUnmounted} from 'vue';
 import planPickerItem from './plan-picker-item.vue';
 const plans = ref([
-"El soltero",
-"El adicto",
-"El viajero",
+"El Cafetero",
+"El Chelero",
+"El ",
 ]);
 const plansWrapper =ref(null);
 const selectedPlan = ref(null);
@@ -47,4 +49,18 @@ onUnmounted(()=>{
  console.log('Componente Plan Picker desmontado');
  clearInterval(processId);
  });
+
+
+ /*
+// Lo que hice en clase con el profesor
+ defineProps({
+
+  name: String,
+  required: true
+ },
+ planIcon: String,
+ price: { 
+  type: Number,
+  default:200
+ })*/
 </script>

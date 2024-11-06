@@ -1,4 +1,4 @@
-<script setup>
+<!--<script setup>
 import planPicker from './components/plan-picker.vue';
 import{ref} from 'vue';
 const showPlans =ref(true);
@@ -25,8 +25,26 @@ const showPlans =ref(true);
     <plan-picker v-if="showPlans"/>
   
   </div>
+</template>-->
+
+<script setup>
+import { compileTemplate } from 'vue/compiler-sfc';
+import planItem from './components/plan-item.vue';
+</script>
+<template>
+<header>
+  <div style="text-aling:center;">
+    <span id="logo">ITGAM BOX EXPERIENCES</span> <br>
+      <img src="./assets/logo.png" alt="logo">
+
+  </div>
+    </header>
+
+    <div class="content">
+      <h1
 </template>
 
+</script>
 <style scoped>
 header {
   line-height: 1.5;
