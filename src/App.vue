@@ -1,4 +1,4 @@
-<!--<script setup>
+<script setup>
 import planPicker from './components/plan-picker.vue';
 import{ref} from 'vue';
 const showPlans =ref(true);
@@ -25,8 +25,8 @@ const showPlans =ref(true);
     <plan-picker v-if="showPlans"/>
   
   </div>
-</template>-->
-
+</template>
+<!-- lo que hice con el profesor
 <script setup>
 import { compileTemplate } from 'vue/compiler-sfc';
 import planItem from './components/plan-item.vue';
@@ -45,6 +45,7 @@ import planItem from './components/plan-item.vue';
 </template>
 
 </script>
+-->
 <style scoped>
 header {
   line-height: 1.5;

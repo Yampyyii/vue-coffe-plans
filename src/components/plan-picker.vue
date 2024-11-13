@@ -1,5 +1,7 @@
 <template>
-  <div ref="plansWrapper" 
+
+  
+  <!--<div ref="plansWrapper" 
  class="plans">
     <plan-picker-item
     @select="printSelected"
@@ -8,8 +10,8 @@
     :name="plan"
     v-bind:key="plan" />
 
-  <!-- <p style="font-size: 30px;">Counter:{{ counter }}</p>-->
-  </div>
+   <p style="font-size: 30px;">Counter:{{ counter }}</p>
+  </div> -->
 </template>
 
 <script setup>
@@ -20,7 +22,7 @@ import planPickerItem from './plan-picker-item.vue';
 const plans = ref([
 "El Cafetero",
 "El Chelero",
-"El ",
+"El Intelectual",
 ]);
 const plansWrapper =ref(null);
 const selectedPlan = ref(null);
@@ -49,6 +51,7 @@ onUnmounted(()=>{
  console.log('Componente Plan Picker desmontado');
  clearInterval(processId);
  });
+
 
 
  /*
