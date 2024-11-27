@@ -7,7 +7,7 @@ const showPlans =ref(true);
 <template>
   <header>
     <div>
-      <span id="logo">Liquid Gold Box</span>
+      <span id="logo">ITGAM BOX EXPERIENCE</span>
       <img src="./assets/logo.png" alt="logo">
     </div>
   </header>
