@@ -16,9 +16,9 @@
 import { ref, onMounted, onUnmounted} from 'vue';
 import planPickerItem from './plan-picker-item.vue';
 const plans = ref([
-"El soltero",
-"El adicto",
-"El viajero",
+"El Cafetero",
+"El Chelero",
+"El Intelectual",
 ]);
 const plansWrapper =ref(null);
 const selectedPlan = ref(null);
